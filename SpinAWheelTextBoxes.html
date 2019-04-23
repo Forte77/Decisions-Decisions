@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Spin A Wheel</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="css/projectStyle.css" rel="stylesheet" type="text/css" />
+		<script src="js/SpinAWheelTextBoxes.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/js/SkypeActions.js"></script>
+	</head>
+
+	<body class="bg">
+		<!--<p>Click the button and each will perform some dynamic function!</p>-->
+		<div class="frame">
+				<div class="posit">
+						<div id = "hiddenWheel" style="display: none;">  
+							<div class="circle-outer">
+									<img src="img/arrow.png" class= "needle">
+								<ul class="circle"> 
+								<!--This is where divisions will be added-->
+								</ul> 
+							</div> 
+						</div>
+						<p id="spinID"></p>
+						<p id="spinBtnDisabled"></p>
+						<p id="resultLog"></p>
+				<div id="main">
+					<input type="button" id="btAdd" value="Add" class="btn btn-primary" />
+					<input type="button" id="btRemove" value="Remove" class="btn btn-primary" />
+					<input type="button" id="btRemoveAll" value="Remove All" class="btn btn-primary" /><br />
+				</div>
+				<br>
+				<a href="index.html"><button type="button" class="btn btn-primary">Back</button></a>
+				<div class="wheelPosit">
+					<p id="circlePosit"></p>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

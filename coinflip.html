@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Coinflip</title>
+		<link rel="stylesheet" href="css/coinflip.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="css/projectStyle.css" rel="stylesheet" type="text/css" />
+		<script src="js/coinflip.js"></script>
+		<script type="text/javascript" src="/js/SkypeActions.js"></script>
+		
+		
+	</head>
+	
+	<body class="bg">
+		<div class="frame">
+			<!--Where coin is displayed-->
+			<div class="centerItems" id="coin">
+				  <div class="side-a"></div>
+				  <div class="side-b"></div>
+			</div>
+			<script>
+				function myFunction() {
+					document.getElementById("centerItems").style.margin = "25px";
+				}
+			</script>
+			<!--Textboxes where user can fill in the box for choices-->					
+			<form id="tBox">
+					<div class="textBox" >
+						<label for="heads">Heads:</label>
+							<input type="text" class="input" id="heads"  placeholder="Enter text" size = 30>
+						<label for="tails">Tails:</label>
+							<input type="text" class="input" id="tails"  placeholder="Enter text" size = 30>
+					</div>
+			</form>
+			<!--To give error message-->
+			<p id = "error"></p>			
+			<!-- Back Button -->
+			<div class="centerItems"> 
+				<div class="back">
+					<a href="index.html"><button type="button" class="btn btn-primary">Back</button></a>
+				</div> 			
+			</div>
+		</div>
+	</body>			
+</html>
